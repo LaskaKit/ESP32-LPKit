@@ -34,7 +34,13 @@ Programování je díky našemu programátoru “CH340 programmer” velmi jedno
 Pokud nemáte náš programátor nebo jiný USB-UART převodník bez DTR a RTS pinu, pak je třeba před nahráním vstoupit do bootloader módu, což provedete kombinací tlačítek RESET a FLASH
 
 Stiskněte FLASH
+
 Stiskněte RESET a stále držte FLASH
+
 Uvolněte RESET
+
 Nakonec uvolněte i tlačítko FLASH
+
 Poté stačí kliknout na “Nahrát” ve vašem Arduino IDE.
+
+Vzorový kód naleznete na https://github.com/LaskaKit/Testcode_examples/tree/main/Boards/ESP32%20LPkit
