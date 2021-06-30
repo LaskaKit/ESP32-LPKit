@@ -9,6 +9,8 @@ Rozmístění
 
 Jak můžete vidět na obrázku výše, vývojový kit ESP32 LPkit obsahuje microUSB konektor pouze pro nabíjení akumulátoru, konektor pro Li-ion akumulátor, tlačítko RESET a FLASH, a GPIO hřebínky po obou stranách desky. 
 
+Z druhé desky je pak programovací konektor.
+
 ## Nabíjecí obvod akumulátoru
 
 Li-ion akumulátor je nabíjen skrze microUSB konektor, nabíjení je řízeno čipem TP4054. 
@@ -19,13 +21,11 @@ Pokud rezistor R11 nezměníte, jeho hodnota je 1k65 a maximální nabíjecí pr
 
 ![Vzorec pro výpočet nabíjecího proudu](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkit3.jpg)
 
-Z druhé desky je pak programovací konektor.
-
 ## Spotřeba
 
 Spotřeba ESP32 LP kit během režimu spánku je pouhých 6,5 uA (při 4,2V). To znamená, že celá deska, napájena pouze z Li-ion akumulátoru bez připojeného CH340 Programmer odebírá pouze 6,5uA.
 
-![Vzorec pro výpočet nabíjecího proudu](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkit2.jpg)
+![ESP340 LPkit and CH340 programmer](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkit2.jpg)
 
 ## Programování
 
