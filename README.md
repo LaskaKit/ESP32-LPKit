@@ -5,7 +5,7 @@ During the development of this board, we also thought about other features which
 
 ## Pinout
 
-![ESP32 LPkit pipnout](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkit1.jpg)
+![ESP32 LPkit pipnout](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkit1_1.jpg)
 
 As you can see on the picture above, ESP32 LPkit board contains microUSB connector for (only) charging of Li-ion battery, connector for Li-ion battery, RESET button and FLASH button, and GPIO headers on both sides of board.
 
