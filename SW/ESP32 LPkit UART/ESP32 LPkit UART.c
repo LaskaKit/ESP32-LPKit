@@ -1,11 +1,11 @@
 /*
-* Example code for ESP32-LPkit evaluation board made by laskarduino.cz
+* Example code for ESP32-LPkit evaluation board made by laskakit.cz
 * Firmware sends message through serial com port (UART)
-* "laskarduino.cz" 
+* "laskakit.cz" 
 * "ESP32 LP-kit"
 * The message is sent every second
 *
-* Created by (c) laskarduino.cz 2021
+* Created by (c) laskakit.cz 2021
 *
 * Libraries:
 * -
@@ -20,7 +20,7 @@ void setup() {
 }
  
 void loop() {
-  Serial.println("laskarduino.cz");
+  Serial.println("laskakit.cz");
   Serial.println("ESP32-LPkit");
   delay(1000);
 }
