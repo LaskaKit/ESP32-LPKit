@@ -2,8 +2,9 @@
  * Example code for LaskaKit SCD41 (CO2 sensor) LaskaKit ESP32-lpkit and LaskaKit Memory display
  * 
  * Boards:
- * https://www.laskakit.cz/
+ * https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/
  * https://www.laskakit.cz/laskakit-scd41-senzor-co2--teploty-a-vlhkosti-vzduchu/
+ * https://www.laskakit.cz/laskakit-2-7--400x240-lcd-memory-displej/
  * 
  * 
  * Library:
@@ -71,25 +72,22 @@ void setup(void) {
 
 void loop(void) {
 
-  if (SCD41.readMeasurement()) {  // wait for a new data (approx 30s)
-
-    CO2 = SCD41.getCO2();
-    temperature =SCD41.getTemperature();
-    humidity = SCD41.getHumidity();
-
-    Serial.println();
-
-    Serial.print("CO2(ppm):");
-    Serial.print(CO2);
-
-    Serial.print("\tTemperature(C):");
-    Serial.print(temperature, 1);
-
-    Serial.print("\tHumidity(%RH):");
-    Serial.print(humidity, 1);
-
-    Serial.println();
+  while (!SCD41.readMeasurement()) {
+    delay(100);
   }
+
+  CO2 = SCD41.getCO2();
+  temperature =SCD41.getTemperature();
+  humidity = SCD41.getHumidity();
+
+  Serial.println();
+  Serial.print("CO2(ppm):");
+  Serial.print(CO2);
+  Serial.print("\tTemperature(C):");
+  Serial.print(temperature, 1);
+  Serial.print("\tHumidity(%RH):");
+  Serial.print(humidity, 1);
+  Serial.println();
 
   display.setTextColor(BLACK, WHITE);
   display.setFont(&Orbitron_Bold_72);
@@ -111,8 +109,9 @@ void loop(void) {
   delay(100);
   display.refresh();
   delay(100);
-
-  esp_sleep_enable_timer_wakeup(1800 * uS_TO_S_FACTOR);
+  
+  Serial.print("going to sleep");
+  esp_sleep_enable_timer_wakeup(300 * uS_TO_S_FACTOR);
   Serial.flush(); 
   esp_deep_sleep_start();
 
