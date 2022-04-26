@@ -9,6 +9,8 @@ Rozmístění
 
 Jak můžeš vidět na obrázku výše, vývojový kit ![ESP32 LPkit](https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/) obsahuje USB-C konektor pouze pro nabíjení akumulátoru, konektor pro Lipol akumulátor, tlačítko RESET a FLASH, a GPIO hřebínky po obou stranách desky. 
 
+Co jsme si 100% jistí je, že se ti zalíbí náš konektor, který jsme nazvali μŠup. Je to malý, zároveň odolný a nemůže se ti stát, že bys čidlo přepóloval. Je prostě bezpečný. S tímto konektorem můžeš vývojovou desku připojit k další spoustě čidel a desek. Některé už máme skladem, na jiných pracujeme. Konektor je pinově kompatibilní s Adafruit Stemma a Sparkfun Qwiik.
+
 Z druhé desky je pak programovací konektor.
 
 ![ESP32 LPkit rozmístění](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/esp32-lpkit-back_popis.jpg )
@@ -27,9 +29,9 @@ Pokud rezistor R11 nezměníte, jeho hodnota je 1k65 a maximální nabíjecí pr
 
 Spotřeba ESP32 LP kit během režimu spánku je pouhých 6,5 uA (při 4,2V). To znamená, že celá deska, napájena pouze z Li-ion akumulátoru bez připojeného ![LaskaKit CH340 programmer](https://www.laskakit.cz/laskakit-ch340-programmer-usb-c--microusb--uart/) odebírá pouze 6,5uA.
 
-![ESP340 LPkit and CH340 programmer](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkit2.jpg)
-
 ## Programování
+
+![ESP340 LPkit and CH340 programmer](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkit2.jpg)
 
 Programování je díky našemu programátoru “![LaskaKitCH340 programmer](https://www.laskakit.cz/laskakit-ch340-programmer-usb-c--microusb--uart/)” velmi jednoduché, programátor zasuneš do konektoru, připojíš microUSB konektor nebo USB-C konektor do programátoru, v Arduino IDE vybereš port, kam je programátor připojený a tvůj kód nahraješ kliknutím na “Nahrát”. Na programátoru přepni na 3.3V!
 
