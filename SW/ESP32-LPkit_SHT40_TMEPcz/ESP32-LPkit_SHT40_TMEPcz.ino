@@ -1,12 +1,12 @@
 /*
-* Vzorovy kod od laskarduino.cz pro SHT40 s vyvojovym kitem ESP32-LPkit
+* Vzorovy kod od laskakit.cz pro SHT40 s vyvojovym kitem ESP32-LPkit
 * Kod posle pres seriovy port (UART) a zaroven na server TMEP.cz
 * hodnoty teploty a vlhkosti z SHT40 kazdou minutu
 *
 * SHT40 (https://www.laskakit.cz/laskakit-sht40-senzor-teploty-a-vlhkosti-vzduchu/) je pripojen pres uSup konektor
 * ESP32-LPkit (https://www.laskakit.cz/laskakit-sht40-senzor-teploty-a-vlhkosti-vzduchu/)
 *
-* Vytvoreno (c) laskarduino.cz 2022
+* Vytvoreno (c) laskakit.cz 2022
 *
 * Potrebne knihovny:
 * https://github.com/adafruit/Adafruit_SHT4X
@@ -22,8 +22,8 @@ const char* password = "PASSWORD";
 
 Adafruit_SHT4x sht4 = Adafruit_SHT4x();
 
-// vypln tvou domenu, kterou sis zaregistroval na tmep.cz
-String serverName = "http://VASEDOMENA.tmep.cz/index.php?";
+// vypln tvou domenu cidla, kterou sis zaregistroval na tmep.cz
+String serverName = "http://TVADOMENA.tmep.cz/index.php?";
  
 void setup() {
   Serial.begin(115200);
