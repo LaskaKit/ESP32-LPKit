@@ -7,7 +7,7 @@
 * SHT40 (https://www.laskakit.cz/laskakit-scd41-senzor-co2--teploty-a-vlhkosti-vzduchu/) je pripojen pres uSup konektor
 * ESP32-LPkit (https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/)
 *
-* Vytvoreno (c) laskarduino.cz 2022
+* Vytvoreno (c) laskakit.cz 2022
 *
 * Potrebne knihovny:
 * https://github.com/sparkfun/SparkFun_SCD4x_Arduino_Library //SCD41
