@@ -56,9 +56,8 @@ void setup() {
     Serial.println("Low power mod povolen.");
   }
 
-  // cteni ADC
+  // nastaveni ADC
   adc.attach(34);
-  vBat = adc.readVoltage()*1.3; // pomer odporu v delici, R2=320k; R1=100k
 
   // pripojeni k Wi-Fi
   WiFi.begin(ssid, password);
@@ -77,6 +76,9 @@ void loop() {
   {
     delay(1);
   } 
+ 
+  // mereni napeti s ADC
+  vBat = adc.readVoltage()*1.3; // pomer odporu v delici, R2=320k; R1=100k
 
   // odeslani hodnot pres UART
   Serial.print("Teplota: "); Serial.print(SCD41.getTemperature()); Serial.println(" degC");
