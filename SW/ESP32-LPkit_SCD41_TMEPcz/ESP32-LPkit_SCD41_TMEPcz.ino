@@ -4,7 +4,7 @@
 * hodnoty teploty a vlhkosti z SCD41
 * kazdou minutu
 *
-* SHT40 (https://www.laskakit.cz/laskakit-scd41-senzor-co2--teploty-a-vlhkosti-vzduchu/) je pripojen pres uSup konektor
+* SCD41 (https://www.laskakit.cz/laskakit-scd41-senzor-co2--teploty-a-vlhkosti-vzduchu/) je pripojen pres uSup konektor
 * ESP32-LPkit (https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/)
 *
 * Vytvoreno (c) laskakit.cz 2022
