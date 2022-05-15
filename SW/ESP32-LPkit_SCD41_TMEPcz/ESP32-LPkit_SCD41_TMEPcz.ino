@@ -20,8 +20,16 @@
 #include <ESP32AnalogRead.h>
 #include "SparkFun_SCD4x_Arduino_Library.h"
 
+/* TADY NASTAVIS - WI-FI A TMEP.CZ */
 const char* ssid = "SSID";
 const char* password = "PASSWORD";
+
+// vypln tvou domenu cidla, kterou sis zaregistroval na tmep.cz
+String serverName = "http://TVADOMENA.tmep.cz/index.php?";
+// vypln tve GUID cidla
+String GUID = "GUID"; 
+
+/* KONEC NASTAVENI */
 
 // SCD41
 SCD4x SCD41;
@@ -30,9 +38,6 @@ SCD4x SCD41;
 ESP32AnalogRead adc;
 float vBat = 0.0;
 
-// vypln tvou domenu cidla, kterou sis zaregistroval na tmep.cz
-String serverName = "http://TVADOMENA.tmep.cz/index.php?";
- 
 void setup() {
   Serial.begin(115200);
   Wire.begin();
@@ -91,8 +96,8 @@ void loop() {
   {
       HTTPClient http;
       
-      //GUID pro teplotu "teplota", pro vlhkost "humV", pro CO2 "CO2", pro napeti baterie "v"
-      String serverPath = serverName + "teplota=" + SCD41.getTemperature() + "&humV=" + SCD41.getHumidity() + "&CO2=" + SCD41.getCO2() + "&v=" + vBat; 
+      //GUID, nasleduje hodnota teploty, pro vlhkost "humV", pro CO2 "CO2", pro napeti baterie "v"
+      String serverPath = serverName + "" + GUID + "=" + SCD41.getTemperature() + "&humV=" + SCD41.getHumidity() + "&CO2=" + SCD41.getCO2() + "&v=" + vBat; 
       
       // zacatek http spojeni
       http.begin(serverPath.c_str());
