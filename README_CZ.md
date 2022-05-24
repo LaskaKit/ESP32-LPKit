@@ -47,6 +47,6 @@ Nakonec uvolni i tlačítko FLASH
 
 Poté stačí kliknout na “Nahrát” ve tvém Arduino IDE.
 
-Vzorový kód nalezneš na https://github.com/LaskaKit/Testcode_examples/tree/main/Boards/ESP32%20LPkit
+Vzorový kód nalezneš na https://github.com/LaskaKit/ESP32-LPKit/tree/main/SW
 
 ESP32-LPKit si můžeš zakoupit na https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/
