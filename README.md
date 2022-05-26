@@ -48,7 +48,7 @@ And then also release FLASH button
 
 Now ESP32 is in bootloader mode, you just click on "Upload" in you Arduino IDE
 
-The example code you can find here (https://github.com/LaskaKit/Testcode_examples/tree/main/Boards/ESP32%20LPkit)
+The example code you can find here (https://github.com/LaskaKit/ESP32-LPKit/tree/main/SW)
 
 The ultra low-power eval board LaskaKit ESP32-LPkit is on https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/
 
