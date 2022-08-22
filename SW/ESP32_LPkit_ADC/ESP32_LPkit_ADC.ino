@@ -11,31 +11,29 @@
 * - ESP32AnalogRead
 */
 
+#include <SPI.h>
 #include <Wire.h>
-#include <ESP32AnalogRead.h>
-
+#include <ESP32AnalogRead.h>    // https://github.com/madhephaestus/ESP32AnalogRead
 
 ESP32AnalogRead adc;
 #define ADCpin 34
-#define deviderRatio 1.3
+#define deviderRatio 1.7693877551  // Voltage devider ratio on ADC pin 1MOhm + 1.3MOhm
     
 void setup() {
+    
+  Serial.begin(115200);
+  delay(100); // let serial console settle
   
   // setting ADC
   adc.attach(ADCpin);
-  
-  Serial.begin(115200);
-  delay(100); // let serial console settle
-
 }
 
 void loop() {
 
   float bat_voltage = adc.readVoltage() * deviderRatio;
-
-  Serial.print("Voltage = " );
+  Serial.print("Battery Voltage = " );
   Serial.print(bat_voltage);
   Serial.println("V");
 
-  delay(1000);
+  delay(2000);
 }

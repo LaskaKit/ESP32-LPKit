@@ -83,7 +83,7 @@ void loop() {
   } 
  
   // mereni napeti s ADC
-  vBat = adc.readVoltage()*1.3; // pomer odporu v delici, R2=320k; R1=100k
+  vBat = adc.readVoltage()*1.7693877551  // Voltage devider ratio on ADC pin 1MOhm + 1.3MOhm
 
   // odeslani hodnot pres UART
   Serial.print("Teplota: "); Serial.print(SCD41.getTemperature()); Serial.println(" degC");
