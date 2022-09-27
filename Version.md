@@ -1,4 +1,6 @@
-### Version 2.3
+### Version 2.4
+Added Q2 AO3401 for power source switching | Přidán Q2 AO3401 pro přepínání napájecího zdroje
+#### Version 2.3
 Adjusted resistor values in the resistance divider to 1M/1.3M, ADC max. input voltage stays the same. Changing the programming connector - now it is possible to solder our smd programmer| Upraveny hodnoty rezistorů v odporovém děliči na 1M/1.3M, ADC max. vstupní napětí zůstává stejné. Změna programovacího konektoru - možno připájet smd programátor.
 #### Version 2.2
 - Voltager devider changed to 100k/130k ADC max. input voltage is 4.423 V | Dělič napětí změněn na 100k/130k ADC max. vstupní napětí je 4,423 V
