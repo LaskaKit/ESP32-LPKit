@@ -13,6 +13,8 @@ As you can see on the picture above, ![ESP32 LPkit](https://www.laskakit.cz/lask
 
 On the bottom side, there is programming connector. The connector is pin-to-pin compatible with our programmer called ![LaskaKit CH340 programmer](https://www.laskakit.cz/laskakit-ch340-programmer-usb-c--microusb--uart/). 
 
+![ESP32 LPkit pinout](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/esp32lpkit-pinout1.jpg)
+
 We are 100% sure that you will appreciate our μŠup connector. It is small, durable and safe connector for connection to other evaluation board and sensor boards. The μŠup connector is pin-to-pin compatible with Adafruit Stemma a Sparkfun Qwiik. We offer a lot of sensors and board and we are designing a new board and sensors. 
 
 ## Charging IC for Li-ion battery
