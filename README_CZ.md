@@ -15,6 +15,8 @@ Z druhé desky je pak programovací konektor.
 
 ![ESP32 LPkit rozmístění](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/esp32-lpkit-back_popis.jpg )
 
+![ESP32 LPkit pinout](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/esp32lpkit-pinout1.jpg)
+
 ## Nabíjecí obvod akumulátoru
 
 Li-ion akumulátor je nabíjen skrze moderní a univerzální USB-C konektor, nabíjení je řízeno čipem TP4054. 
