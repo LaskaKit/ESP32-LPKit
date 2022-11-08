@@ -5,7 +5,7 @@ Během vývoje desky ![ESP32 LPkit](https://www.laskakit.cz/laskakit-esp32-lpkit
 
 Rozmístění
 
-![ESP32 LPkit rozmístění](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/esp32-lpkit-front_popis.jpg )
+![ESP32 LPkit rozmístění](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/esp32lpkit-pinout_1.jpg)
 
 Jak můžeš vidět na obrázku výše, vývojový kit ![ESP32 LPkit](https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/) obsahuje USB-C konektor pouze pro nabíjení akumulátoru, konektor pro Lipol akumulátor, tlačítko RESET a FLASH, a GPIO hřebínky po obou stranách desky. 
 
