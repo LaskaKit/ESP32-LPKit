@@ -5,7 +5,7 @@ During the development of this board, we also thought about other features which
 
 ## Pinout
 
-![ESP32 LPkit pinout](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32LPkitPinout.JPG)
+![ESP32 LPkit pinout](https://github.com/LaskaKit/ESP32-LPKit/blob/main/img/ESP32-LPkit_pinout.JPG)
 
 As you can see on the picture above, [ESP32 LPkit](https://www.laskakit.cz/laskakit-esp32-lpkit-pcb-antenna/) board contains popular and versatile USB-C connector for (only) charging of Li-ion battery, connector for Li-ion battery, RESET button and FLASH button, and GPIO headers on both sides of board and our connector called μŠup.
 
