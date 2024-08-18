@@ -11,13 +11,11 @@
 *
 * Potrebne knihovny:
 * https://github.com/sparkfun/SparkFun_SCD4x_Arduino_Library //SCD41
-* https://github.com/madhephaestus/ESP32AnalogRead/ //Cteni z ADC s kalibracemi
 */
 
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <Wire.h>
-#include <ESP32AnalogRead.h>
 #include "SparkFun_SCD4x_Arduino_Library.h"
 
 /* TADY NASTAVIS - WI-FI A TMEP.CZ */
@@ -35,7 +33,6 @@ String GUID = "GUID";
 SCD4x SCD41;
 
 // Cteni ADC 
-ESP32AnalogRead adc;
 float vBat = 0.0;
 
 void setup() {
@@ -61,9 +58,6 @@ void setup() {
     Serial.println("Low power mod povolen.");
   }
 
-  // nastaveni ADC
-  adc.attach(34);
-
   // pripojeni k Wi-Fi
   WiFi.begin(ssid, password);
   Serial.println("Pripojovani");
@@ -83,7 +77,7 @@ void loop() {
   } 
  
   // mereni napeti s ADC
-  vBat = adc.readVoltage()*1.7693877551;  // Voltage devider ratio on ADC pin 1MOhm + 1.3MOhm
+  vBat = analogReadMilliVolts(34) * 1.7693877551 / 1000;  // Voltage devider ratio on ADC pin 1MOhm + 1.3MOhm
 
   // odeslani hodnot pres UART
   Serial.print("Teplota: "); Serial.print(SCD41.getTemperature()); Serial.println(" degC");
